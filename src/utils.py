@@ -1,6 +1,12 @@
 from dotenv import load_dotenv
 from sqlalchemy import create_engine
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import math
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
+from sklearn.feature_selection import f_classif,SelectKBest
+from sklearn.model_selection import train_test_split
 
 # load the .env file variables
 load_dotenv()
